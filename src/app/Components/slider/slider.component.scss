@@ -1,0 +1,107 @@
+@import '../../../variables.scss';
+.slider-item{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 700px;
+  height: calc(100vh - 190px);
+
+  @media screen and (max-width: 575px) {
+    min-height: 400px !important;
+    height: auto !important;
+  }
+
+  @media screen and (max-width: 1199px) {
+    min-height: 400px !important;
+    height: auto !important;
+  }
+
+  .slider-inner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .slider-info{
+      .slide-title{
+        font-size: 72px;
+        font-weight: 700;
+        color: #434343;
+
+        @media screen and (max-width: 575px) {
+          font-size: 26px !important;
+        }
+
+        @media screen and (max-width: 1199px) {
+          font-size: 36px;
+        }
+      }
+
+      .slide-sub-title{
+        font-size: 25px;
+        font-weight: 400;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        color: $body-color !important;
+
+        @media screen and (max-width: 575px) {
+          font-size: 14px !important;
+        }
+
+        @media screen and (max-width: 1199px) {
+          font-size: 14px;
+        }
+
+        &::before{
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          width: 90px;
+          height: 2px;
+          background-color: $secondary-color;
+        }
+      }
+
+      .slide-brief{
+        max-width: 450px;
+
+        @media screen and (max-width: 575px) {
+          max-width: 400px !important;
+        }
+
+        @media screen and (max-width: 1199px) {
+          max-width: 400px;
+        }
+      }
+
+      .btn-wrapper{
+        display: block;
+        margin-top: 30px;
+
+        .btn-round{
+          border-radius: 50px;
+          margin-right: 0;
+
+          &:hover{
+            background-color: $main-color;
+            color: #fff;
+          }
+        }
+
+        .btn{
+          @media screen and (max-width: 575px) {
+            padding: 10px 20px !important;
+            font-size: 14px !important;
+          }
+    
+          @media screen and (max-width: 1199px) {
+            padding: 12px 25px;
+          }
+        }
+      }
+    }
+  }
+}

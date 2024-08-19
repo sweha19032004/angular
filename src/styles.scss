@@ -1,1 +1,450 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+
+
+body {
+    color: $body-color;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    font-size: 16px;
+    font-family: $body-font;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-bg-6 {
+    background-color: #fdfdfd;
+}
+
+.section-bg-1{
+background-color: #f9f9f9;
+}
+
+.ltn__border {
+    border: 1px solid #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $heading-color;
+    clear: both;
+    font-family: $body-font;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+p{
+    color: $paragraph-color;
+    font-family: $paragraph-font;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+    font-size: 16px;
+
+    @media screen and (max-width: 575px) and (max-width: 1199px) {
+        font-size: 14px !important;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mt--65 {
+    margin-top: -65px;
+}
+
+.mb-70{
+    margin-bottom: 70px;
+}
+
+a{
+    color: $body-color;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    
+    &:hover{
+        color: $secondary-color;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.secondary-color {
+    color: $secondary-color !important;
+}
+
+.scrollbar{
+    overflow-y: auto;
+
+    &::-webkit-scrollbar{
+        width: 2px;
+        background-color: #f5f5f5;
+        border-radius: 30px
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: #ddd;
+    }
+}
+
+.section-bg-5 {
+    background-color: #272829;
+}
+
+.btn-wrapper {
+    display: block;
+    margin-top: 30px;
+}
+
+.theme-btn-1 {
+    background-color: $secondary-color;
+    color: #fff;
+}
+
+.theme-btn-2 {
+    background-color: $main_color;
+    color: #fff;
+}
+
+.btn {
+    border-radius: 0;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 1;
+    margin-right: 15px;
+
+    @media only screen and (max-width: 767px){
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px){
+        padding: 12px 25px;
+    }
+
+}
+
+ul li {
+    list-style: none;
+    display: block;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pt-65 {
+    padding-top: 65px;
+}
+
+.pt-170{
+    padding-top: 170px;
+}
+
+.pb-150{
+    padding-bottom: 150px;
+}
+
+.plr--5{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-95{
+    padding-top: 95px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mt-115{
+    margin-top: 115px;
+}
+
+.pb-30{
+    padding-bottom: 30px;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+
+.pb-35{
+    padding-bottom: 35px;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.pb-80{
+    padding-bottom: 80px;
+}
+
+.pt-35{
+    padding-top: 35px;
+}
+
+.pt-90{
+    padding-top: 90px;
+}
+
+.pb-70{
+    padding-bottom: 70px;
+}
+
+.pb-60{
+    padding-bottom: 60px;
+}
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pb-50{
+    padding-bottom: 50px;
+}
+
+.m-0 {
+    margin: 0!important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.btn-border {
+    border: 2px solid #ebeeee;
+    box-shadow: none;
+}
+
+blockquote {
+    font-size: 18px;
+    font-family: $paragraph-font;
+    line-height: 1.6;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    padding: 30px 40px 30px 35px;
+    margin: 50px 0 50px 0px;
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    border-left: 3px solid $secondary-color;
+
+    h6{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+    border-color: #ddd;
+}
+
+.nice-select {
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 40px;
+    outline: 0;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left!important;
+    transition: all .2s ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+@media (min-width: 1200px){
+    .container {
+       max-width: 1200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    body {
+    font-size: 14px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    h1{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px){
+    h3 {
+    font-size: 18px !important;
+    }
+
+    h5 {
+        font-size: 16px !important;
+    }
+
+    h4 {
+        font-size: 17px !important;
+    }
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"], textarea {
+    background-color: #f7f7f7;
+    border: none;
+    border-color: #e4ecf2;
+    height: 50px;
+    box-shadow: none;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0;
+    padding-right: 40px;
+
+    &::placeholder{
+        font-size: 14px;
+        color: #000;
+    }
+}
+
+textarea {
+    resize: vertical;
+    padding: 15px 20px;
+    min-height: 150px;
+}
+
+@media (max-width: 767px){
+    .shop-details-tab-content-inner {
+        padding: 50px 20px 30px;
+    }
+}
+
+//angular material custom style
+
+.mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+
+mat-form-field{
+    line-height: 1;
+
+    mat-label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.mdc-list-item__primary-text{
+    font-size: 14px !important;
+}
+
+.mat-mdc-select-min-line{
+    font-size: 14px !important;
+} 
+    
+mat-tab-header{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #ececec;
+    margin-bottom: 30px;
+}
+
+.mat-mdc-tab-body-content {
+    overflow: hidden !important;
+}
+

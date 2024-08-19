@@ -1,0 +1,144 @@
+@import '../../../variables.scss';
+
+.footer-top-area {
+    padding-top: 95px;
+    padding-bottom: 15px;
+
+    .footer-widget {
+        margin-bottom: 60px;
+
+        .footer-title {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 30px;            
+        }
+
+        .footer-menu{
+            ul{
+                padding: 0;
+                margin: 0;
+
+                li{
+                    list-style: none;
+                    color: #999999;
+                    margin-top: 0px;
+                    margin-bottom: 15px;
+                    position: relative;
+                    font-size: 14px;
+
+                    a{
+                        color: #999999;
+
+                        &:hover{
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        p{
+            font-size: 14px;
+            color: #999999;
+        }
+
+        .footer-address {
+            margin-bottom: 10px;
+
+            ul{
+                padding: 0;
+                margin: 0;
+
+                li{
+                    color: #999999;
+                    list-style: none;
+                    display: block;
+                    margin-top: 0px;
+                    font-size: 14px;
+                    
+                    .footer-address-icon {
+                        float: left;
+                        margin-right: 15px;
+                    }
+
+                    .footer-address-info {
+                        overflow: hidden;
+
+                        p {
+                            margin-bottom: 0;
+                            font-size: 14px;
+                        }
+
+                        a{
+                            color: #999999;
+                            font-size: 14px;
+
+                            &:hover{
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+
+                    &::after{
+                        display: block;
+                        clear: both;
+                        content: "";                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright-area{
+    .container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .footer-copyright-left{
+        p{
+            color: #999999;
+            margin-bottom: 0;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    .footer-copyright-right{
+        .social-media{
+            ul{
+                padding: 0;
+                margin: 0;
+
+                li{
+                    margin-bottom: 0;
+                    font-size: 12px;
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 15px 0 0;
+
+                    a{
+                        color: #999999;
+
+                        &:hover{
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.border-top-2 {
+    border-top: 1px solid #3b3c3d;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}

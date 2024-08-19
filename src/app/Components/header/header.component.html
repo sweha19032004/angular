@@ -1,0 +1,383 @@
+<header class="header-area section-bg-6">
+    <div class="header-middle-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                   <div class="logo">
+                    <a routerLink="">
+                        <img src="assets/images/logo.png">
+                    </a>
+                   </div>
+                </div>
+                <div class="col-lg-8 col-md-6 header-contact-search">
+                    <div class="row">
+                       <div class="col-md-3">
+                        <div class="header-feature-item">
+                            <div class="icon">
+                                <i class="icon-phone"></i>
+                            </div>
+                            <div class="info">
+                                <h6>phone</h6>
+                                <p>
+                                    <a href="#">+0123-456-789</a>
+                                </p>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-9">
+                        <div class="header-search">
+                            <form>
+                                <input type="text" name="search" value placeholder="Search here...">
+                                <button type="submit">
+                                    <span>
+                                        <i class="icon-magnifier"></i>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                   <div class="header-options">
+                    <ul>
+                        <li>
+                            <div class="mini-cart">
+                                <a class="utilize-toggle" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <span class="cart-icon">
+                                        <i class="icon-handbag"></i>
+                                        <sup>2</sup>
+                                    </span>
+                                    <h6>
+                                        <span>Your Cart</span>
+                                        <span class="secondary-color">$89.25</span>
+                                    </h6>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-navbar">
+                                <a role="button"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    <i class="icon-menu"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col justify-content-center">
+                    <div class="header-menu">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                              <a class="navbar-brand d-none" routerLink="">
+                                <img src="assets/images/logo.png">
+                              </a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" routerLink="/about">About Us</a></li>
+                                        <li><a class="dropdown-item" routerLink="/portfolio">Portfolio</a></li>
+                                        <li><a class="dropdown-item" routerLink="/portfolio-details">Portfolio Details</a></li>
+                                        <li><a class="dropdown-item" routerLink="/faq">FAQ</a></li>
+                                        <li><a class="dropdown-item" routerLink="/locations">Google Map Locations</a></li>
+                                        <li><a class="dropdown-item" routerLink="/notfound">404</a></li>
+                                        <li><a class="dropdown-item" routerLink="/coming-soon">Coming Soon</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Shop
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" routerLink="/shop">Shop</a></li>
+                                      <li><a class="dropdown-item" routerLink="/shop-grid">Shop Grid</a></li>
+                                      <li><a class="dropdown-item" routerLink="/shop-details">Shop Details</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      portfolio
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" routerLink="/portfolio">Portfolio</a></li>
+                                      <li><a class="dropdown-item" routerLink="/portfolio-details">Portfolio Details</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      News
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" routerLink="/news">News</a></li>
+                                      <li><a class="dropdown-item" routerLink="/news-grid">News Grid</a></li>
+                                      <li><a class="dropdown-item" routerLink="/news-details">News Details</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" routerLink="/contact">contact</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Other Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" routerLink="/cart">Cart</a></li>
+                                      <li><a class="dropdown-item" routerLink="/wishlist">Wishlist</a></li>
+                                      <li><a class="dropdown-item" routerLink="/checkout">Checkout</a></li>
+                                      <li><a class="dropdown-item" routerLink="/order">Order Tracking</a></li>
+                                      <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+                                      <li><a class="dropdown-item" routerLink="/login">Login</a></li>
+                                      <li><a class="dropdown-item" routerLink="/register">Register</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="offcanvas offcanvas-end scrollbar" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <span class="offcanvas-title" id="offcanvasRightLabel">cart</span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body scrollbar">
+        <div class="cart-products scrollbar">
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/1.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">Premium Joyful</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $65.00</span>
+        </div>
+            </div>
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/2.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">The White Rose</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $85.00</span>
+        </div>
+            </div>
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/3.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">Red Rose Bouquet</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $92.00</span>
+        </div>
+            </div>
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/4.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">Pink Flower Tree</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $68.00</span>
+        </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-sub-total">
+                <h5>
+                    Subtotal: 
+                    <span>$310.00</span>
+                </h5>
+            </div>
+            <div class="btn-wrapper">
+                <a routerLink="/cart" class="theme-btn-1 btn btn-effect-1">View Cart</a>
+                <a routerLink="/checkout" class="theme-btn-2 btn btn-effect-2">Checkout</a>
+            </div>
+            <p>Free Shipping on All Orders Over $100!</p>
+        </div> 
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start nav-mobile" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <div class="logo">
+        <img src="assets/images/logo.png">
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body scrollbar">
+      <div class="form-search-mobile">
+        <form action="">
+            <input type="text" placeholder="Search...">
+            <button>
+                <i class="icon-magnifier"></i>
+            </button>
+        </form>
+      </div>
+      <div class="menu">
+        <ul>
+            <li>
+                <a routerLink="/home">Home</a>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a routerLink="/about">About Us</a></li>
+                    <li class="dropdown-item"><a routerLink="/portfolio">Portfolio</a></li>
+                    <li class="dropdown-item"><a routerLink="/portfolio-details">Portfolio Details</a></li>
+                    <li class="dropdown-item"><a routerLink="/faq">FAQ</a></li>
+                    <li class="dropdown-item"><a routerLink="/locations">Google Map Locations</a></li>
+                    <li class="dropdown-item"><a routerLink="/notfound">404</a></li>
+                    <li class="dropdown-item"><a routerLink="/coming-soon">Coming Soon</a></li>                    
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a routerLink="/shop">Shop</a></li>
+                    <li class="dropdown-item"><a routerLink="/shop-grid">Shop Grid</a></li>
+                    <li class="dropdown-item"><a routerLink="/shop-details">Shop Details</a></li>                  
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Portfolio</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a routerLink="/portfolio">Portfolio</a></li>
+                    <li class="dropdown-item"><a routerLink="/portfolio-details">Portfolio Detalis</a></li>                
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a  class="dropdown-toggle" type="button" data-bs-toggle="dropdown">News</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a routerLink="/news">News</a></li>
+                    <li class="dropdown-item"><a routerLink="/news-grid">News Grid</a></li>
+                    <li class="dropdown-item"><a routerLink="/news-details">News Detalis</a></li>                
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/contact">Contact</a>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a  class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Other Pages</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="/cart">Cart</a></li>
+                    <li><a class="dropdown-item" routerLink="/wishlist">Wishlist</a></li>
+                    <li><a class="dropdown-item" routerLink="/checkout">Checkout</a></li>
+                    <li><a class="dropdown-item" routerLink="/order">Order Tracking</a></li>
+                    <li><a class="dropdown-item" routerLink="/account">Account</a></li>
+                    <li><a class="dropdown-item" routerLink="/login">Login</a></li>
+                    <li><a class="dropdown-item" routerLink="/register">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <ul>
+            <li>
+                <a routerLink="/account">
+                    <span class="btn-icon">
+                        <i class="icon-user"></i>
+                    </span>
+                    My Account
+                </a>
+            </li>
+            <li>
+                <a routerLink="/wishlist">
+                    <span class="btn-icon">
+                        <i class="icon-heart"></i>
+                        <sup>3</sup>
+                    </span>
+                    My Wishlist
+                </a>
+            </li>
+            <li>
+                <a routerLink="/cart">
+                    <span class="btn-icon">
+                        <i class="icon-handbag"></i>
+                        <sup>5</sup>
+                    </span>
+                    My Cart
+                </a>
+            </li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+            <li>
+                <a href="www.facebook.com">
+                    <i class="icon-social-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="www.twitter.com">
+                    <i class="icon-social-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="www.linkedin.com">
+                    <i class="icon-social-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="www.instagram.com">
+                    <i class="icon-social-instagram"></i>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>
